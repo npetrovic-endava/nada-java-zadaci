@@ -44,6 +44,7 @@ public class ParniBrojevi {
 			
 		}
 		 ulaz.close();
+		 System.out.println("test promena");
 	}
 
 	public static int proveraInt() {
