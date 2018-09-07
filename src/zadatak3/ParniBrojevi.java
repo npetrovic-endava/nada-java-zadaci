@@ -1,4 +1,4 @@
-package parniBrojevi;
+package zadatak3;
 import java.util.Scanner;
 
 public class ParniBrojevi {
@@ -26,7 +26,7 @@ public class ParniBrojevi {
 				donjaGranica = a;
 			}
            
-			while (donjaGranica < gornjaGranica) {
+			while (donjaGranica <= gornjaGranica) {
 				if (donjaGranica % 2 == 0) {
 					System.out.println(donjaGranica);
 
