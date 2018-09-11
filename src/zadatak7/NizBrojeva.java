@@ -22,7 +22,7 @@ public class NizBrojeva {
 	public static void main(String[] args) {
 
 		while (true) {
-			System.out.println("Uneti broj clanova niza:");
+			System.out.println("Uneti broj clanova niza veci ili jednak broju 5:");
 			//ispituje da li je unet ceo broj
 			clanovi = proveraInt();
 			
@@ -38,7 +38,7 @@ public class NizBrojeva {
 
 		for (int i = 0; i < clanovi; i++) {
 
-			System.out.println("Unesite clan niza:");
+			System.out.println(new StringBuilder("Unesite ").append(i+1).append(". clan niza"));
 
 			niz[i] = proveraInt();
 			
@@ -48,18 +48,18 @@ public class NizBrojeva {
 		Arrays.sort(niz);
 		//ispisivanje prvih pet clanova sortiranog niza
 		
-		System.out.println("Dobijeni niz od pet clanova je:");
+		System.out.println("Dobijeni sortirani niz od pet clanova je:");
 		
 		for (int i = 0; i < 5; i++) {
-			System.out.println(niz[i]);
+			System.out.print(new StringBuilder().append(niz[i]).append(" "));
 		}
 		
 		
 		//provera da li je uneti broj clan niza
-		System.out.println("Uneti broj za koji zelite da vidite da li je u nizu:");
+		System.out.println("\nUneti broj za koji zelite da vidite da li je u nizu:");
         
 		int brojX= proveraInt();
-		String pripada =brojPripadaNizu(brojX, niz);
+		String pripada =brojPripadaNizu(brojX);
 		System.out.println(pripada);
 		
 	}
@@ -77,7 +77,7 @@ public class NizBrojeva {
 		return ulaz.nextInt();
 
 	}
-	public static String brojPripadaNizu(int x, int a[]) {
+	public static String brojPripadaNizu(int x) {
 		for(int i=0; i<clanovi; i++) {
 			if(x==niz[i]) {
 				return "Broj pripada nizu.";
