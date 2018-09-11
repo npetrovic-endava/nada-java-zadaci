@@ -61,7 +61,7 @@ public class NizBrojeva {
 		int brojX= proveraInt();
 		String pripada =brojPripadaNizu(brojX);
 		System.out.println(pripada);
-		
+		ulaz.close();
 	}
 
 	public static int proveraInt() {
