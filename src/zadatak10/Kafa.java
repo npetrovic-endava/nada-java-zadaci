@@ -5,9 +5,11 @@ package zadatak10;
  *
  * @author Nadezda Petrovic
  */
+
 public class Kafa extends Proizvodi {
 
 	private String mlevenaZrno;
+	private final double KONSTANTA_ZA_KRAJNJU_CENU=1.08;
 
 	public Kafa(String imeProizvoda, double cenaProizvoda, String rokTrajanja, String mlevenaZrno) {
 		super(imeProizvoda, cenaProizvoda, rokTrajanja);
@@ -16,7 +18,7 @@ public class Kafa extends Proizvodi {
 
 	@Override
 	public double konacnaCenaProizvoda() {
-		double krajnjaCena = this.getCenaProizvoda() * 1.08;
+		double krajnjaCena = this.getCenaProizvoda()*KONSTANTA_ZA_KRAJNJU_CENU;
 		return krajnjaCena;
 	}
 
@@ -30,7 +32,7 @@ public class Kafa extends Proizvodi {
 
 	@Override
 	public String toString() {
-		return "--Kafa-- mlevena ili u zrnu:" + mlevenaZrno + super.toString();
+		return  new StringBuilder("--Kafa-- mlevena ili u zrnu: ").append(mlevenaZrno).
+				append(super.toString()).toString();
 	}
-
 }

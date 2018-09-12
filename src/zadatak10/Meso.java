@@ -8,6 +8,7 @@ package zadatak10;
 public class Meso extends Proizvodi {
 
 	private String vrstaMesa;
+	private final double KONSTANTA_ZA_KRAJNJU_CENU = 1.08;
 
 	public Meso(String imeProizvoda, double cenaProizvoda, String rokTrajanja, String vrstaMesa) {
 		super(imeProizvoda, cenaProizvoda, rokTrajanja);
@@ -16,7 +17,7 @@ public class Meso extends Proizvodi {
 
 	@Override
 	public double konacnaCenaProizvoda() {
-		double krajnjaCena = this.getCenaProizvoda() * 1.08;
+		double krajnjaCena = this.getCenaProizvoda() * KONSTANTA_ZA_KRAJNJU_CENU;
 		return krajnjaCena;
 	}
 
@@ -30,8 +31,7 @@ public class Meso extends Proizvodi {
 
 	@Override
 	public String toString() {
-		return "--Meso-- vrsta mesa: " + vrstaMesa + super.toString();
-
+		return new StringBuilder("--Meso-- vrsta mesa: ").append(vrstaMesa).append(super.toString()).toString();
 	}
 
 }

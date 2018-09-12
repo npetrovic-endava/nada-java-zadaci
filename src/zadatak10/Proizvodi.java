@@ -45,8 +45,8 @@ public abstract class Proizvodi {
 
 	@Override
 	public String toString() {
-		return ", proizvod:" + imeProizvoda + ", cena: " + cenaProizvoda + ", cena sa PDV-om: " + konacnaCenaProizvoda()
-				+ ", rok trajanja: " + rokTrajanja;
+		return new StringBuilder(", proizvod: ").append(imeProizvoda).append(", cena: ").append(cenaProizvoda)
+				.append(", cena sa PDV-om: ").append(konacnaCenaProizvoda()).append(", rok trajanja: ")
+				.append(rokTrajanja).toString();
 	}
-
 }
