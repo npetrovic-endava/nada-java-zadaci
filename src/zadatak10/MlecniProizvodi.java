@@ -1,12 +1,17 @@
 package zadatak10;
 
+/**
+ * Program cuva informacije o proizvodima za firmu
+ *
+ * @author Nadezda Petrovic
+ */
 public class MlecniProizvodi extends Proizvodi {
 
 	private String porekloMleka;
 
 	public MlecniProizvodi(String imeProizvoda, double cenaProizvoda, String rokTrajanja, String porekloMleka) {
 		super(imeProizvoda, cenaProizvoda, rokTrajanja);
-	this.porekloMleka=porekloMleka;
+		this.porekloMleka = porekloMleka;
 	}
 
 	public String getPorekloMleka() {
@@ -20,14 +25,16 @@ public class MlecniProizvodi extends Proizvodi {
 	@Override
 	public String toString() {
 		return "--Mlecni proizvod-- poreklo mleka: " + getPorekloMleka()
-				//+ ", ime proizvoda:" + getImeProizvoda() + ", cena proizvoda:" + getCenaProizvoda()
-				//+ ", rok trajanja:" + getRokTrajanja() + " krajnja cena proizvoda: " + konacnaCenaProizvoda() + ", toString()="
+		// + ", ime proizvoda:" + getImeProizvoda() + ", cena proizvoda:" +
+		// getCenaProizvoda()
+		// + ", rok trajanja:" + getRokTrajanja() + " krajnja cena proizvoda: " +
+		// konacnaCenaProizvoda() + ", toString()="
 				+ super.toString();
 	}
 
 	@Override
 	public double konacnaCenaProizvoda() {
-		double krajnjaCena=this.getCenaProizvoda()*1.2;
+		double krajnjaCena = this.getCenaProizvoda() * 1.2;
 		return krajnjaCena;
 	}
 

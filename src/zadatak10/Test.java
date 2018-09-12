@@ -1,5 +1,10 @@
 package zadatak10;
 
+/**
+ * Program cuva informacije o proizvodima za firmu
+ *
+ * @author Nadezda Petrovic
+ */
 public class Test {
 	public static void main(String[] args) {
 
