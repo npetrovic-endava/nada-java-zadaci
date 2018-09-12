@@ -17,9 +17,12 @@ public class Student {
 	public static final String NASTAVAK_PROGRAMA = "Da li zelite da nastavite sa programom (da ili ne)?";
 	public static final String NAJBOLJI_STUDENT_ISPIS = "Ime najboljeg studenta je ";
 	public static final String KRAJ_PROGRAMA = "Kraj";
+	public static final String ISPIS_ZA_POGRESAN_PARAMETAR_STRING = "Pogresan parametar, unesite ime studenta (String): ";
+	public static final String ISPIS_ZA_POGRESAN_PARAMETAR_INT = "Pogresan parametar, unesite ceo broj veci od 0:";
+
 	public static void main(String[] args) {
 
-         //maxPoeni dodeljujemo vrednost 0 da bismo u prvom toku if
+		// maxPoeni dodeljujemo vrednost 0 da bismo u prvom toku if
 		// naredbe imali vrednost maxPoeni= broj poena prvog studenta
 
 		int maxPoeni = 0;
@@ -61,7 +64,7 @@ public class Student {
 		String ime = "";
 		while (!ime.matches("^[a-zA-Z]+[\\-'\\s]?[a-zA-Z ]+$")) {
 			if (!ime.equals("")) {
-				System.out.print("Pogresan parametar, unesite ime studenta (String): ");
+				System.out.print(ISPIS_ZA_POGRESAN_PARAMETAR_STRING);
 			}
 			ime = ulaz.nextLine();
 		}
@@ -71,7 +74,7 @@ public class Student {
 	static int proveraInt() {
 
 		while (!ulaz.hasNextInt()) {
-			System.out.println("Pogresan parametar, unesite ceo broj:");
+			System.out.println(ISPIS_ZA_POGRESAN_PARAMETAR_INT);
 			ulaz.next();
 		}
 		return ulaz.nextInt();
@@ -79,7 +82,7 @@ public class Student {
 
 	static int proveraBroj(int n) {
 		while (0 >= n) {
-			System.out.print("Pogresan parametar, unesite ceo broj veci od 0: ");
+			System.out.print(ISPIS_ZA_POGRESAN_PARAMETAR_INT);
 			n = ulaz.nextInt();
 		}
 		return n;
