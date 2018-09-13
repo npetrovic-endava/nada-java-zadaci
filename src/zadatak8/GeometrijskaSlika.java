@@ -11,7 +11,7 @@ package zadatak8;
  */
 public abstract class GeometrijskaSlika {
 
-    public GeometrijskaSlika() {
+    protected GeometrijskaSlika() {
     }
 
     public abstract double obim();
@@ -20,7 +20,7 @@ public abstract class GeometrijskaSlika {
 
     @Override
     public String toString() {
-        return "GeometrijskaSlika";
+        return "Geometrijska slika";
     }
 
 }

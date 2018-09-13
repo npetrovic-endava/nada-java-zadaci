@@ -6,7 +6,6 @@ package zadatak8;
  * Klase imaju preklopljenu metodu toString koja ispisuje obim i povrsinu oblika
  */
 
-
 /**
  *
  * @author Nadezda Petrovic
@@ -48,23 +47,27 @@ public class NejednakostranicniTrougao extends Trougao {
 
 	@Override
 	public String toString() {
-		return "Nejednakostranicni trougao stranica: " + stranica2 + ", " + stranica3 + ", " + this.getStranica()
-				+ " ima obim: " + obim() + " i povrsinu: " + povrsina();
+		return new StringBuilder("Nejednakostranicni trougao stranica: ").append(stranica2).append(", ")
+				.append(stranica3).append(" i ").append(this.getStranica()).append(" ima obim: ").append(obim())
+				.append(" i povrsinu: ").append(povrsina()).toString();
+		// "Nejednakostranicni trougao stranica: " + stranica2 + ", " + stranica3 + ", "
+		// + this.getStranica()
+		// + " ima obim: " + obim() + " i povrsinu: " + povrsina();
 	}
 
 	// povrsina trougla po Heronovoj formuli, preko poluobima
 	@Override
 	public double povrsina() {
 		double poluobim = (this.getStranica() + stranica2 + stranica3) / 2;
-		double rez = Double.parseDouble(
+		double rezultat = Double.parseDouble(
 				String.format("%4.2f", Math.sqrt(poluobim * (poluobim - stranica2) * (poluobim - stranica3))));
-		return rez;
+		return rezultat;
 	}
 
 	@Override
 	public double obim() {
-		double rez = Double.parseDouble(String.format("%4.2f", this.getStranica() + stranica2 + stranica3));
-		return rez;
+		double rezultat = Double.parseDouble(String.format("%4.2f", this.getStranica() + stranica2 + stranica3));
+		return rezultat;
 	}
 
 }

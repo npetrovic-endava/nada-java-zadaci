@@ -6,43 +6,45 @@ package zadatak8;
 
 /**
  *
- *@author Nadezda Petrovic
-
+ * @author Nadezda Petrovic
+ * 
  */
 
-public class Kvadrat extends GeometrijskaSlika{
-    private double stranica;
-    
-    public Kvadrat(){
-        
-    }
-    public Kvadrat(double stranica) {
-        this.stranica = stranica;
-    }
+public class Kvadrat extends GeometrijskaSlika {
+	private double stranica;
 
-    public double getStranica() {
-        return stranica;
-    }
+	public Kvadrat() {
 
-    public void setStranica(double stranica) {
-        this.stranica = stranica;
-    }
+	}
 
-    @Override
-    public double obim() {
-    	double rez=Double.parseDouble(String.format("%4.2f", 4*stranica));
-       return rez;
-    }
+	public Kvadrat(double stranica) {
+		this.stranica = stranica;
+	}
 
-    @Override
-    public double povrsina() {
-    	double rez=Double.parseDouble(String.format("%4.2f", stranica*stranica));
-        return rez;
-    }
+	public double getStranica() {
+		return stranica;
+	}
 
-    @Override
-    public String toString() {
-        return "Kvadrat stranice: " + stranica + " ima obim " + obim() + " i povrsinu: " + povrsina();
-    }
-    
+	public void setStranica(double stranica) {
+		this.stranica = stranica;
+	}
+
+	@Override
+	public double obim() {
+		double rezultat = Double.parseDouble(String.format("%4.2f", 4 * stranica));
+		return rezultat;
+	}
+
+	@Override
+	public double povrsina() {
+		double rezultat = Double.parseDouble(String.format("%4.2f", stranica * stranica));
+		return rezultat;
+	}
+
+	@Override
+	public String toString() {
+		return new StringBuilder("Kvadrat stranice: ").append(stranica).append(" ima obim: ").append(obim())
+				.append(" i povrsinu: ").append(povrsina()).toString();
+	}
+
 }

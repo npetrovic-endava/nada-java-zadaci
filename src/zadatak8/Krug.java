@@ -11,41 +11,39 @@ package zadatak8;
  */
 public class Krug extends GeometrijskaSlika {
 
-    private double poluprecnik;
+	private double poluprecnik;
 
-    public Krug() {
-    }
+	public Krug() {
+	}
 
-    public Krug(double poluprecnik) {
-        this.poluprecnik = poluprecnik;
-    }
+	public Krug(double poluprecnik) {
+		this.poluprecnik = poluprecnik;
+	}
 
-    public double getPoluprecnik() {
-        return poluprecnik;
-    }
+	public double getPoluprecnik() {
+		return poluprecnik;
+	}
 
-    public void setPoluprecnik(double poluprecnik) {
-        this.poluprecnik = poluprecnik;
-    }
+	public void setPoluprecnik(double poluprecnik) {
+		this.poluprecnik = poluprecnik;
+	}
 
-    @Override
-    public double obim() {
-    double rez=Double.parseDouble(String.format("%4.2f", 2*poluprecnik*Math.PI));
-        return rez;
-    }
+	@Override
+	public double obim() {
+		double rezultat = Double.parseDouble(String.format("%4.2f", 2 * poluprecnik * Math.PI));
+		return rezultat;
+	}
 
-    @Override
-    public double povrsina() {
-    	 double rez=Double.parseDouble(String.format("%4.2f", poluprecnik*poluprecnik*Math.PI));
-        return rez;
-    }
+	@Override
+	public double povrsina() {
+		double rezultat = Double.parseDouble(String.format("%4.2f", poluprecnik * poluprecnik * Math.PI));
+		return rezultat;
+	}
 
-    @Override
-    public String toString() {
-        return "Krug poluprecnika: " + poluprecnik + " ima obim: " +this.obim ()+" i povrsinu: " + this.povrsina();
-    }
+	@Override
+	public String toString() {
+		return new StringBuilder("Krug poluprecnika: ").append(poluprecnik).append(" ima obim: ").append(this.obim())
+				.append(" i povrsinu: ").append(this.povrsina()).toString();
+	}
 
-   
 }
-
-
