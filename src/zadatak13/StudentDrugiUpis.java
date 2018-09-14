@@ -17,8 +17,7 @@ public class StudentDrugiUpis {
 	static Scanner ulaz;
 	static Student student;
 	static ArrayList<Student> studenti = new ArrayList<>();
-
-	private static final String GRESKA_ISPISA_IZ_FAJLA = "Doslo je do greske pri ispisu iz fajla ";
+	private static final String GRESKA_ISPISA_IZ_FAJLA = "Doslo je do greske pri ispisu iz fajla";
 
 	public static void main(String[] args) {
 
@@ -31,16 +30,13 @@ public class StudentDrugiUpis {
 				int ocena = izracunajOcenu(brPoena);
 				student = new Student(ime, brPoena, ocena);
 				studenti.add(student);
-				
 			}
-		} 
-		catch (Exception e) {
-			System.out.println(GRESKA_ISPISA_IZ_FAJLA );
+		} catch (Exception e) {
+			System.out.println(GRESKA_ISPISA_IZ_FAJLA);
 		}
 		Collections.reverse(studenti);
 		System.out.println(studenti);
 		ulaz.close();
-
 	}
 
 	private static int izracunajOcenu(int poeni) {
@@ -58,6 +54,5 @@ public class StudentDrugiUpis {
 		else
 			rezultat = 5;
 		return rezultat;
-
 	}
 }
