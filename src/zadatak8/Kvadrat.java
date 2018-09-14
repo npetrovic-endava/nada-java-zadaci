@@ -2,9 +2,7 @@ package zadatak8;
 /* Apstraktnu klasu GeometrijskaSlika nasledjuju klase Krug, Kvadrat i Trougao.
  * Izvedene klase su Elipsa, Pravougaonik i Nejednakostranicni trougao
  * Klase imaju preklopljenu metodu toString koja ispisuje obim i povrsinu oblika
- */
-
-/**
+ *
  *
  * @author Nadezda Petrovic
  * 
@@ -43,8 +41,7 @@ public class Kvadrat extends GeometrijskaSlika {
 
 	@Override
 	public String toString() {
-		return new StringBuilder("Kvadrat stranice: ").append(stranica).append(" ima obim: ").append(obim())
-				.append(" i povrsinu: ").append(povrsina()).toString();
+		return super.toString();
 	}
 
 }

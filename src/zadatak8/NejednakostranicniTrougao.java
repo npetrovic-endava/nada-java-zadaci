@@ -4,9 +4,6 @@ package zadatak8;
  * Apstraktnu klasu GeometrijskaSlika nasledjuju klase Krug, Kvadrat i Trougao.
  * Izvedene klase su Elipsa, Pravougaonik i Nejednakostranicni trougao
  * Klase imaju preklopljenu metodu toString koja ispisuje obim i povrsinu oblika
- */
-
-/**
  *
  * @author Nadezda Petrovic
  */
@@ -47,12 +44,7 @@ public class NejednakostranicniTrougao extends Trougao {
 
 	@Override
 	public String toString() {
-		return new StringBuilder("Nejednakostranicni trougao stranica: ").append(stranica2).append(", ")
-				.append(stranica3).append(" i ").append(this.getStranica()).append(" ima obim: ").append(obim())
-				.append(" i povrsinu: ").append(povrsina()).toString();
-		// "Nejednakostranicni trougao stranica: " + stranica2 + ", " + stranica3 + ", "
-		// + this.getStranica()
-		// + " ima obim: " + obim() + " i povrsinu: " + povrsina();
+		return super.toString();
 	}
 
 	// povrsina trougla po Heronovoj formuli, preko poluobima

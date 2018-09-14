@@ -1,23 +1,17 @@
 package zadatak8;
+
 /*
  * Apstraktnu klasu GeometrijskaSlika nasledjuju klase Krug, Kvadrat i Trougao.
  * Izvedene klase su Elipsa, Pravougaonik i Nejednakostranicni trougao
  * Klase imaju preklopljenu metodu toString koja ispisuje obim i povrsinu oblika
- */
-
-/**
  *
  * @author Nadezda Petrovic
  */
 public class Elipsa extends Krug {
-
 	private double poluprecnik2;
-    private static final double  KONSTANTA_ZA_OBIM=(9 - Math.sqrt(35)) / 2;
+	private static final double KONSTANTA_ZA_OBIM = (9 - Math.sqrt(35)) / 2;
+
 	public Elipsa() {
-	}
-
-	public Elipsa(double poluprecnik2) {
-
 	}
 
 	public Elipsa(double poluprecnik, double poluprecnik2) {
@@ -48,9 +42,7 @@ public class Elipsa extends Krug {
 
 	@Override
 	public String toString() {
-		return new StringBuilder("Elipsa poluprecnika: ").append(getPoluprecnik()).append(" i ")
-				.append(this.getPoluprecnik2()).append(" ima obim: ").append(obim()).append(" i povrsinu ")
-				.append(povrsina()).toString();
+		return super.toString();
 	}
 
 }
