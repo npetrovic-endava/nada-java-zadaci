@@ -19,12 +19,12 @@ public class NizBrojeva {
 	public static int niz[];
 	public static final String UNOS_DUZINE_NIZA = "Uneti broj clanova niza veci ili jednak broju 5: ";
 	public static final String ISPIS_POGRESNOG_UNOSA = "Pogresan unos, broj treba da je veci ili jednak 5.";
-	public static final String ISPIS_NIZA="Dobijeni sortirani niz od pet clanova je:";
-	public static final String UNOS_BROJA_ZA_PROVERU="\nUneti broj za koji zelite da vidite da li je u nizu:";
-	public static final String ISPIS_PRIPADA="Broj pripada nizu.";
-	public static final String ISPIS_NE_PRIPADA="Broj ne pripada nizu.";
-	public static final String ISPIS_POGRESNOG_PARAMETRA="Pogresan parametar, unesite ceo broj veci od 5!";
-	
+	public static final String ISPIS_NIZA = "Dobijeni sortirani niz od pet clanova je:";
+	public static final String UNOS_BROJA_ZA_PROVERU = "\nUneti broj za koji zelite da vidite da li je u nizu:";
+	public static final String ISPIS_PRIPADA = "Broj pripada nizu.";
+	public static final String ISPIS_NE_PRIPADA = "Broj ne pripada nizu.";
+	public static final String ISPIS_POGRESNOG_PARAMETRA = "Pogresan parametar, unesite ceo broj veci od 5!";
+
 	public static void main(String[] args) {
 		while (true) {
 			System.out.println(UNOS_DUZINE_NIZA);
@@ -71,12 +71,12 @@ public class NizBrojeva {
 	}
 
 	private static String brojPripadaNizu(int x) {
-		boolean pripadaNizu=false;
+		boolean pripadaNizu = false;
 		for (int i = 0; i < clanovi; i++) {
 			if (x == niz[i]) {
-				pripadaNizu=true;
+				pripadaNizu = true;
 			}
 		}
-		return pripadaNizu?ISPIS_PRIPADA:ISPIS_NE_PRIPADA;
+		return pripadaNizu ? ISPIS_PRIPADA : ISPIS_NE_PRIPADA;
 	}
 }
