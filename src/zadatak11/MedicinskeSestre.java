@@ -1,9 +1,7 @@
 package zadatak11;
-
 /**
  * @author Nadezda Petrovic
  **/
-
 public class MedicinskeSestre extends Zaposleni {
 	private int smena;
 

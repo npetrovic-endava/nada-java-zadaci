@@ -1,11 +1,8 @@
 package zadatak11;
-
 import java.util.ArrayList;
-
 /**
  * @author Nadezda Petrovic
  **/
-
 public class Firma {
 	private ArrayList<Bolnica> bolnice;
 

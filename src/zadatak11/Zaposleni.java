@@ -1,6 +1,5 @@
 package zadatak11;
 import java.text.SimpleDateFormat;
-
 /**
  *
  * @author Nadezda Petrovic
@@ -12,12 +11,12 @@ public abstract class Zaposleni {
 	private String adresa;
 	private String telefon;
 	private String datumRodjenja;
-	private final String PORUKA_ZA_POGRESNO_IME = "Nije unet pravilan podatak za ime";
-	private final String PORUKA_ZA_POGRESNO_PREZIME = "Nije unet pravilan podatak za prezime";
-	private final String PORUKA_ZA_POGRESAN_BR_TELEFONA = "Nije unet pravilan podatak za broj telefona";
-	private final String PORUKA_ZA_POGRESAN_UNOS_DATUMA_RODJENJA = "Nije unet pravilan podatak za datum rodjenja";
-	private final String REGEX_1 = "^[a-zA-Z]+[\\-'\\s]?[a-zA-Z ]+$";
-	private final String REGEX_2 = "^[0-9\\-]*$";
+	private static final String PORUKA_ZA_POGRESNO_IME = "Nije unet pravilan podatak za ime";
+	private static final String PORUKA_ZA_POGRESNO_PREZIME = "Nije unet pravilan podatak za prezime";
+	private static final String PORUKA_ZA_POGRESAN_BR_TELEFONA = "Nije unet pravilan podatak za broj telefona";
+	private static final String PORUKA_ZA_POGRESAN_UNOS_DATUMA_RODJENJA = "Nije unet pravilan podatak za datum rodjenja";
+	private static final String REGEX_1 = "^[a-zA-Z]+[\\-'\\s]?[a-zA-Z ]+$";
+	private static final String REGEX_2 = "^[0-9\\-]*$";
 
 	protected Zaposleni(String ime, String prezime, String adresa, String telefon, String datumRodjenja) {
 		super();

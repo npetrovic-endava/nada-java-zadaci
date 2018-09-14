@@ -1,7 +1,5 @@
 package zadatak11;
-
 import java.util.ArrayList;
-
 /**
  * Napisati program koji opisuje sledeci scenario:
  * 
