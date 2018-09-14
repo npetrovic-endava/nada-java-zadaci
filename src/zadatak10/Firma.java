@@ -1,6 +1,10 @@
 package zadatak10;
 
 import java.util.ArrayList;
+/**
+*
+* @author Nadezda Petrovic
+*/
 
 public class Firma {
 	private double kapital;
@@ -34,7 +38,7 @@ public class Firma {
 		if (kapital > iznosPorudzbine) {
 			sredstva = true;
 			kapital = kapital - iznosPorudzbine;
-			System.out.println(String.format("Novi iznos kapital je %.2f", kapital));
+			System.out.println(String.format("Novi iznos kapitala je %.2f", kapital));
 			lista.clear();
 		}
 		return sredstva ? ISPIS_DOVOLJNA : ISPIS_NEDOVOLJNA;

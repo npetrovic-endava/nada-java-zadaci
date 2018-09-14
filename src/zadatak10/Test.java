@@ -3,7 +3,7 @@ package zadatak10;
 import java.util.ArrayList;
 
 /**
- * Program cuva informacije o proizvodima za firmu
+ * Program provera mogucnost porudzbine za firmu
  *
  * @author Nadezda Petrovic
  */
