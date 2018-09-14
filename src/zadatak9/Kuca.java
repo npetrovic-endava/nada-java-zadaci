@@ -9,8 +9,8 @@ public class Kuca extends Nekretnina {
 
 	private double povrsinaOkucnice;
 	private int multiplikator;
-	private final double KONSTANTA = 0.15;
-	private final String PORUKA_ZA_POGRESNU_POVRSINU_OKUCNICE = "Unet je pogresan parametar za kvadraturu okucnice";
+	private static final double KONSTANTA = 0.15;
+	private static final String PORUKA_ZA_POGRESNU_POVRSINU_OKUCNICE = "Unet je pogresan parametar za kvadraturu okucnice";
 
 	protected Kuca(Vlasnik vlasnik, String adresa, int zona, int kvadratura, double povrsinaOkucnice) {
 		super(vlasnik, adresa, zona, kvadratura);

@@ -12,8 +12,8 @@ public abstract class Nekretnina {
 	private int kvadratura;
 	Vlasnik vlasnik;
 
-	private final String PORUKA_ZA_POGRESNU_ZONU = "Unet je pogresan parametar za zonu";
-	private final String PORUKA_ZA_POGRESNU_KVADRATURU = "Unet je pogresan parametar za kvadraturu";
+	private static final String PORUKA_ZA_POGRESNU_ZONU = "Unet je pogresan parametar za zonu";
+	private static final String PORUKA_ZA_POGRESNU_KVADRATURU = "Unet je pogresan parametar za kvadraturu";
 
 	protected Nekretnina(Vlasnik vlasnik, String adresa, int zona, int kvadratura) {
 		super();

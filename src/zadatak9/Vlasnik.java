@@ -11,11 +11,11 @@ public class Vlasnik {
 	private String imePrezime;
 	private String jmbg;
 	private String brLicneKarte;
-	private final String PORUKA_ZA_POGRESNO_IME = "Nije unet pravilan podatak za ime i prezime";
-	private final String PORUKA_ZA_POGRESAN_JMBG = "Unet je pogresan JMBG";
-	private final String PORUKA_ZA_POGRESAN_BR_LK = "Unet je pogresan broj licne karte";
-	private final String REGEX_1 = "^[a-zA-Z]+[\\-'\\s]?[a-zA-Z ]+$";
-	private final String REGEX_2 = "[0-9]+";
+	private static final String PORUKA_ZA_POGRESNO_IME = "Nije unet pravilan podatak za ime i prezime";
+	private static final String PORUKA_ZA_POGRESAN_JMBG = "Unet je pogresan JMBG";
+	private static final String PORUKA_ZA_POGRESAN_BR_LK = "Unet je pogresan broj licne karte";
+	private static final String REGEX_1 = "^[a-zA-Z]+[\\-'\\s]?[a-zA-Z ]+$";
+	private static final String REGEX_2 = "[0-9]+";
 
 	public Vlasnik() {
 	}

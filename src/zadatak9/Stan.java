@@ -11,8 +11,8 @@ public class Stan extends Nekretnina {
 	private double povrsinaPodruma;
 	private double povrsinaTerase;
 	private int multiplikator;
-	private final double KONSTANTA = 0.33;
-	private final String PORUKA_ZA_POGRESNU_POVRSINU = "Unet je pogresan parametar za kvadraturu podruma ili terase";
+	private static final double KONSTANTA = 0.33;
+	private static final String PORUKA_ZA_POGRESNU_POVRSINU = "Unet je pogresan parametar za kvadraturu podruma ili terase";
 
 	public Stan(Vlasnik vlasnik, String adresa, int zona, int kvadratura, double povrsinaPodruma,
 			double povrsinaTerase) {
