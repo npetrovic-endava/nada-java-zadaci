@@ -1,9 +1,9 @@
 package zadatak13;
+
 /*
  *  @author Nadezda Petrovic
  * 
  */
-
 public class Student {
 	private String imePrezime;
 	private int brojPoena;
@@ -28,7 +28,7 @@ public class Student {
 		return brojPoena;
 	}
 
-	public void setBrojPoena( int brojPoena) {
+	public void setBrojPoena(int brojPoena) {
 		this.brojPoena = brojPoena;
 	}
 
@@ -44,7 +44,5 @@ public class Student {
 	public String toString() {
 		return new StringBuilder(" Student ime: ").append(imePrezime).append(", broj poena: ").append(brojPoena)
 				.append(", Ocena: ").append(ocena).toString();
-
 	}
-
 }

@@ -1,5 +1,4 @@
 package zadatak13;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,16 +10,13 @@ import java.util.Scanner;
  *  @author Nadezda Petrovic
  * 
  */
-
 public class StudentDrugiUpis {
-
 	static Scanner ulaz;
 	static Student student;
 	static ArrayList<Student> studenti = new ArrayList<>();
 	private static final String GRESKA_ISPISA_IZ_FAJLA = "Doslo je do greske pri ispisu iz fajla";
 
 	public static void main(String[] args) {
-
 		File file = new File("ocena2.txt");
 		try {
 			ulaz = new Scanner(file);
