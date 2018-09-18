@@ -1,7 +1,5 @@
 package zadatak11;
-
-import java.util.ArrayList;
-
+import java.util.List;
 /**
  * @author Nadezda Petrovic
  **/
@@ -10,13 +8,13 @@ public class Bolnica {
 	private String nazivBolnice;
 	private String imeDirektora;
 	private int brojZaposlenih;
-	private ArrayList<Lekar> lekari;
-	private ArrayList<Osoblje> osoblje;
-	private ArrayList<MedicinskeSestre> sestre;
+	private List<Lekar> lekari;
+	private List<Osoblje> osoblje;
+	private List<MedicinskeSestre> sestre;
 
 	
-	public Bolnica(String nazivBolnice, String imeDirektora, ArrayList<Lekar> lekari, ArrayList<Osoblje> osoblje,
-			ArrayList<MedicinskeSestre> sestre) {
+	public Bolnica(String nazivBolnice, String imeDirektora, List<Lekar> lekari, List<Osoblje> osoblje,
+			List<MedicinskeSestre> sestre) {
 		super();
 		this.nazivBolnice = nazivBolnice;
 		this.imeDirektora = imeDirektora;
@@ -25,27 +23,27 @@ public class Bolnica {
 		this.sestre = sestre;
 	}
 
-	public ArrayList<Lekar> getLekari() {
+	public List<Lekar> getLekari() {
 		return lekari;
 	}
 
-	public void setLekari(ArrayList<Lekar> lekari) {
+	public void setLekari(List<Lekar> lekari) {
 		this.lekari = lekari;
 	}
 
-	public ArrayList<Osoblje> getOsoblje() {
+	public List<Osoblje> getOsoblje() {
 		return osoblje;
 	}
 
-	public void setOsoblje(ArrayList<Osoblje> osoblje) {
+	public void setOsoblje(List<Osoblje> osoblje) {
 		this.osoblje = osoblje;
 	}
 
-	public ArrayList<MedicinskeSestre> getSestre() {
+	public List<MedicinskeSestre> getSestre() {
 		return sestre;
 	}
 
-	public void setSestre(ArrayList<MedicinskeSestre> sestre) {
+	public void setSestre(List<MedicinskeSestre> sestre) {
 		this.sestre = sestre;
 	}
 
@@ -84,22 +82,18 @@ public class Bolnica {
 	}
 
 	public int brojZaposlenih() {
-		brojZaposlenih = lekari.size() + osoblje.size() + sestre.size();
-		return brojZaposlenih;
+			return lekari.size() + osoblje.size() + sestre.size();
 	}
 
 	public int brojSestara() {
-		int brojSestara = sestre.size();
-		return brojSestara;
+		return sestre.size();
 	}
 
 	public int brojLekara() {
-		int brojLekara = lekari.size();
-		return brojLekara;
+			return lekari.size();
 	}
 
 	public int brojOsoblja() {
-		int brojOsoblja = osoblje.size();
-		return brojOsoblja;
+		return osoblje.size();
 	}
 }

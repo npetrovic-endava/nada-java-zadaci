@@ -1,5 +1,6 @@
 package zadatak11;
 import java.util.ArrayList;
+import java.util.List;
 /**
  * Napisati program koji opisuje sledeci scenario:
  * 
@@ -16,11 +17,11 @@ import java.util.ArrayList;
 public class Test {
 	public static void main(String[] args) {
 
-		ArrayList<Lekar> nizLekara1 = new ArrayList<>();
-		ArrayList<Lekar> nizLekara2 = new ArrayList<>();
-		ArrayList<MedicinskeSestre> nizSestara1 = new ArrayList<>();
-		ArrayList<Osoblje> nizOsoblja = new ArrayList<>();
-		ArrayList<Bolnica> nizBolnica = new ArrayList<>();
+		List<Lekar> nizLekara1 = new ArrayList<>();
+		List<Lekar> nizLekara2 = new ArrayList<>();
+		List<MedicinskeSestre> nizSestara1 = new ArrayList<>();
+		List<Osoblje> nizOsoblja = new ArrayList<>();
+		List<Bolnica> nizBolnica = new ArrayList<>();
 		Firma firma = new Firma(nizBolnica);
 		Bolnica bolnica1 = new Bolnica("Gradska bolnica", "Bora Djokic", nizLekara1, nizOsoblja, nizSestara1);
 		Bolnica bolnica2 = new Bolnica("Prva bolnica", "Petar Petrovic", nizLekara2, nizOsoblja, nizSestara1);

@@ -1,21 +1,21 @@
 package zadatak11;
-import java.util.ArrayList;
+import java.util.List;
 /**
  * @author Nadezda Petrovic
  **/
 public class Firma {
-	private ArrayList<Bolnica> bolnice;
+	private List<Bolnica> bolnice;
 
-	public Firma(ArrayList<Bolnica> bolnice) {
+	public Firma(List<Bolnica> bolnice) {
 		super();
 		this.bolnice = bolnice;
 	}
 
-	public ArrayList<Bolnica> getBolnice() {
+	public List<Bolnica> getBolnice() {
 		return bolnice;
 	}
 
-	public void setBolnice(ArrayList<Bolnica> bolnice) {
+	public void setBolnice(List<Bolnica> bolnice) {
 		this.bolnice = bolnice;
 	}
 
