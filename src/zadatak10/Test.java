@@ -13,7 +13,7 @@ public class Test {
 	public static void main(String[] args) {
 
 		List<Proizvodi> lista = new ArrayList<>();
-		ArrayList<Proizvodi> lista2 = new ArrayList<>();
+		List<Proizvodi> lista2 = new ArrayList<>();
 
 		Proizvodi sir = new MlecniProizvodi("sir", 123, "novembar 2018", "koziji");
 		Proizvodi sok = new Sokovi("vocni sok", 231.8, "decembar 2018", "jabuka");
