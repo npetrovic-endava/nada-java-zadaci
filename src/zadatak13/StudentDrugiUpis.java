@@ -1,8 +1,11 @@
 package zadatak13;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+import java.util.List;
+
 /*
  * Program ispisuje na standardni izlaz spisak studenata (ime, poeni, ocena) 
  * koji se nalaze u fajlu ocena2.txt, sortiran po poenima
@@ -11,9 +14,9 @@ import java.util.Scanner;
  * 
  */
 public class StudentDrugiUpis {
-	static Scanner ulaz;
-	static Student student;
-	static ArrayList<Student> studenti = new ArrayList<>();
+	private static Scanner ulaz;
+	private static Student student;
+	private static List<Student> studenti = new ArrayList<>();
 	private static final String GRESKA_ISPISA_IZ_FAJLA = "Doslo je do greske pri ispisu iz fajla";
 
 	public static void main(String[] args) {
@@ -31,7 +34,9 @@ public class StudentDrugiUpis {
 			System.out.println(GRESKA_ISPISA_IZ_FAJLA);
 		}
 		Collections.reverse(studenti);
-		System.out.println(studenti);
+		for (Student s : studenti) {
+			System.out.println(s.toString());
+		}
 		ulaz.close();
 	}
 
