@@ -37,9 +37,9 @@ public class NizBrojeva {
 				System.out.println(ISPIS_POGRESNOG_UNOSA);
 			} else
 				break;
-			uslov=false;
+			
 		}
-
+		uslov=false;
 		niz = new int[clanovi];
 
 		for (int i = 0; i < clanovi; i++) {
