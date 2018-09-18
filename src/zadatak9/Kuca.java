@@ -37,9 +37,7 @@ public class Kuca extends Nekretnina {
 
 	@Override
 	public double cenaNekretnine() {
-		double cena = getKvadratura() * Multiplikator(getZona())
-				+ (povrsinaOkucnice) * Multiplikator(getZona()) * KONSTANTA;
-		return cena;
+		return getKvadratura() * multiplikator(getZona()) + (povrsinaOkucnice) * multiplikator(getZona()) * KONSTANTA;
 	}
 
 	@Override
@@ -48,7 +46,7 @@ public class Kuca extends Nekretnina {
 				.append(povrsinaOkucnice).append("]").toString();
 	}
 
-	public int Multiplikator(int zona) {
+	public int multiplikator(int zona) {
 
 		switch (zona) {
 		case (1):

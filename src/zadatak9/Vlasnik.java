@@ -34,8 +34,8 @@ public class Vlasnik {
 
 		if (brLicneKarte.matches(REGEX_2) && 6 == brLicneKarte.length()) {
 			this.brLicneKarte = brLicneKarte;
-		}else {
-		throw new IllegalArgumentException(PORUKA_ZA_POGRESAN_BR_LK);
+		} else {
+			throw new IllegalArgumentException(PORUKA_ZA_POGRESAN_BR_LK);
 		}
 	}
 
@@ -70,8 +70,8 @@ public class Vlasnik {
 	public void setBrLicneKarte(String brLicneKarte) {
 		if (brLicneKarte.matches(REGEX_2) && 6 == brLicneKarte.length()) {
 			this.brLicneKarte = brLicneKarte;
-		}else {
-		throw new IllegalArgumentException(PORUKA_ZA_POGRESAN_BR_LK);
+		} else {
+			throw new IllegalArgumentException(PORUKA_ZA_POGRESAN_BR_LK);
 		}
 	}
 

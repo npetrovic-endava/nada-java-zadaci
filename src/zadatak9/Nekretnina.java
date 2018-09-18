@@ -10,7 +10,7 @@ public abstract class Nekretnina {
 	private String adresa;
 	private int zona;
 	private int kvadratura;
-	Vlasnik vlasnik;
+	private Vlasnik vlasnik;
 
 	private static final String PORUKA_ZA_POGRESNU_ZONU = "Unet je pogresan parametar za zonu";
 	private static final String PORUKA_ZA_POGRESNU_KVADRATURU = "Unet je pogresan parametar za kvadraturu";

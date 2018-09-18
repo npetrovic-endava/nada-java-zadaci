@@ -36,7 +36,6 @@ public class Stan extends Nekretnina {
 			this.povrsinaPodruma = povrsinaPodruma;
 		} else
 			throw new IllegalArgumentException(PORUKA_ZA_POGRESNU_POVRSINU);
-
 	}
 
 	public double getPovrsinaTerase() {
@@ -53,12 +52,11 @@ public class Stan extends Nekretnina {
 
 	@Override
 	public double cenaNekretnine() {
-		double cena = getKvadratura() * Multiplikator(getZona())
-				+ (povrsinaPodruma + povrsinaTerase) * Multiplikator(getZona()) * KONSTANTA;
-		return cena;
+		return getKvadratura() * multiplikator(getZona())
+				+ (povrsinaPodruma + povrsinaTerase) * multiplikator(getZona()) * KONSTANTA;
 	}
 
-	public int Multiplikator(int zona) {
+	public int multiplikator(int zona) {
 
 		switch (zona) {
 		case (1):
