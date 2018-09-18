@@ -1,6 +1,6 @@
 package zadatak10;
 
-import java.util.ArrayList;
+import java.util.List;
 /**
 *
 * @author Nadezda Petrovic
@@ -8,11 +8,11 @@ import java.util.ArrayList;
 
 public class Firma {
 	private double kapital;
-	private ArrayList<Proizvodi> listaProizvoda;
+	private List<Proizvodi> listaProizvoda;
 	private static final String ISPIS_DOVOLJNA = "Napravili ste porudzbinu.";
 	private static final String ISPIS_NEDOVOLJNA = "Nemate dovoljno sredstava za porudzbinu.";
 
-	public Firma(double kapital, ArrayList<Proizvodi> listaProizvoda) {
+	public Firma(double kapital, List<Proizvodi> listaProizvoda) {
 		super();
 		this.kapital = kapital;
 		this.listaProizvoda = listaProizvoda;
@@ -23,12 +23,12 @@ public class Firma {
 		this.kapital = kapital;
 	}
 
-	public Firma(ArrayList<Proizvodi> listaProizvoda) {
+	public Firma(List<Proizvodi> listaProizvoda) {
 		super();
 		this.listaProizvoda = listaProizvoda;
 	}
 
-	public String porudzbina(ArrayList<Proizvodi> lista) {
+	public String porudzbina(List<Proizvodi> lista) {
 		boolean sredstva = false;
 		double iznosPorudzbine = 0;
 		for (Proizvodi proizvod : lista) {
@@ -52,11 +52,11 @@ public class Firma {
 		this.kapital = kapital;
 	}
 
-	public ArrayList<Proizvodi> getListaProizvoda() {
+	public List<Proizvodi> getListaProizvoda() {
 		return listaProizvoda;
 	}
 
-	public void setListaProizvoda(ArrayList<Proizvodi> listaProizvoda) {
+	public void setListaProizvoda(List<Proizvodi> listaProizvoda) {
 		this.listaProizvoda = listaProizvoda;
 	}
 

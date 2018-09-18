@@ -2,6 +2,8 @@ package zadatak10;
 
 import java.util.ArrayList;
 
+import java.util.List;
+
 /**
  * Program provera mogucnost porudzbine za firmu
  *
@@ -10,7 +12,7 @@ import java.util.ArrayList;
 public class Test {
 	public static void main(String[] args) {
 
-		ArrayList<Proizvodi> lista = new ArrayList<>();
+		List<Proizvodi> lista = new ArrayList<>();
 		ArrayList<Proizvodi> lista2 = new ArrayList<>();
 
 		Proizvodi sir = new MlecniProizvodi("sir", 123, "novembar 2018", "koziji");
