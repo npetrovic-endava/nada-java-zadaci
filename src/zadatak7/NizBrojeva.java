@@ -14,19 +14,19 @@ import java.util.Scanner;
 
 public class NizBrojeva {
 
-	public static Scanner ulaz = new Scanner(System.in);
-	public static int clanovi;
-	public static int niz[];
-	public static final String UNOS_DUZINE_NIZA = "Uneti broj clanova niza veci ili jednak broju 5: ";
-	public static final String ISPIS_POGRESNOG_UNOSA = "Pogresan unos, broj treba da je veci ili jednak 5.";
-	public static final String ISPIS_NIZA = "Dobijeni sortirani niz od pet clanova je:";
-	public static final String UNOS_BROJA_ZA_PROVERU = "\nUneti broj za koji zelite da vidite da li je u nizu:";
-	public static final String ISPIS_PRIPADA = "Broj pripada nizu.";
-	public static final String ISPIS_NE_PRIPADA = "Broj ne pripada nizu.";
-	public static final String ISPIS_POGRESNOG_PARAMETRA = "Pogresan parametar, unesite ceo broj veci od 5!";
-
+	private static Scanner ulaz = new Scanner(System.in);
+	private static int clanovi;
+	private static int[] niz;
+	private static final String UNOS_DUZINE_NIZA = "Uneti broj clanova niza veci ili jednak broju 5: ";
+	private static final String ISPIS_POGRESNOG_UNOSA = "Pogresan unos, broj treba da je veci ili jednak 5.";
+	private static final String ISPIS_NIZA = "Dobijeni sortirani niz od pet clanova je:";
+	private static final String UNOS_BROJA_ZA_PROVERU = "\nUneti broj za koji zelite da vidite da li je u nizu:";
+	private static final String ISPIS_PRIPADA = "Broj pripada nizu.";
+	private static final String ISPIS_NE_PRIPADA = "Broj ne pripada nizu.";
+	private static final String ISPIS_POGRESNOG_PARAMETRA = "Pogresan parametar, unesite ceo broj veci od 5!";
+    private static boolean uslov=true;
 	public static void main(String[] args) {
-		while (true) {
+		while (uslov) {
 			System.out.println(UNOS_DUZINE_NIZA);
 			// ispituje da li je unet ceo broj
 			clanovi = proveraInt();
@@ -37,6 +37,7 @@ public class NizBrojeva {
 				System.out.println(ISPIS_POGRESNOG_UNOSA);
 			} else
 				break;
+			uslov=false;
 		}
 
 		niz = new int[clanovi];
@@ -59,6 +60,7 @@ public class NizBrojeva {
 		int brojX = proveraInt();
 		String pripada = brojPripadaNizu(brojX);
 		System.out.println(pripada);
+		
 		ulaz.close();
 	}
 
