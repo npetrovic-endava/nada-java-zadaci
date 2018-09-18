@@ -8,7 +8,7 @@ package zadatak10;
 public class Kafa extends Proizvodi {
 
 	private String mlevenaZrno;
-	private final double KONSTANTA_ZA_KRAJNJU_CENU=1.08;
+	private static final double KONSTANTA_ZA_KRAJNJU_CENU = 1.08;
 
 	public Kafa(String imeProizvoda, double cenaProizvoda, String rokTrajanja, String mlevenaZrno) {
 		super(imeProizvoda, cenaProizvoda, rokTrajanja);
@@ -17,8 +17,7 @@ public class Kafa extends Proizvodi {
 
 	@Override
 	public double konacnaCenaProizvoda() {
-		double krajnjaCena = this.getCenaProizvoda()*KONSTANTA_ZA_KRAJNJU_CENU;
-		return krajnjaCena;
+		return this.getCenaProizvoda() * KONSTANTA_ZA_KRAJNJU_CENU;
 	}
 
 	public String getMlevenaIliZrno() {
@@ -31,7 +30,7 @@ public class Kafa extends Proizvodi {
 
 	@Override
 	public String toString() {
-		return  new StringBuilder("--Kafa-- mlevena ili u zrnu: ").append(mlevenaZrno).
-				append(super.toString()).toString();
+		return new StringBuilder("--Kafa-- mlevena ili u zrnu: ").append(mlevenaZrno).append(super.toString())
+				.toString();
 	}
 }

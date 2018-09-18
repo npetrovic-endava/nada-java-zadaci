@@ -7,7 +7,7 @@ package zadatak10;
 public class MlecniProizvodi extends Proizvodi {
 
 	private String porekloMleka;
-	private final double KONSTANTA_ZA_KRAJNJU_CENU = 1.20;
+	private static final double KONSTANTA_ZA_KRAJNJU_CENU = 1.20;
 
 	public MlecniProizvodi(String imeProizvoda, double cenaProizvoda, String rokTrajanja, String porekloMleka) {
 		super(imeProizvoda, cenaProizvoda, rokTrajanja);
@@ -30,7 +30,6 @@ public class MlecniProizvodi extends Proizvodi {
 
 	@Override
 	public double konacnaCenaProizvoda() {
-		double krajnjaCena = this.getCenaProizvoda() * KONSTANTA_ZA_KRAJNJU_CENU;
-		return krajnjaCena;
+				return  this.getCenaProizvoda() * KONSTANTA_ZA_KRAJNJU_CENU;
 	}
 }
