@@ -1,5 +1,7 @@
 package zadatak11;
+
 import java.util.List;
+
 /**
  * @author Nadezda Petrovic
  **/
@@ -12,7 +14,6 @@ public class Bolnica {
 	private List<Osoblje> osoblje;
 	private List<MedicinskeSestre> sestre;
 
-	
 	public Bolnica(String nazivBolnice, String imeDirektora, List<Lekar> lekari, List<Osoblje> osoblje,
 			List<MedicinskeSestre> sestre) {
 		super();
@@ -82,7 +83,7 @@ public class Bolnica {
 	}
 
 	public int brojZaposlenih() {
-			return lekari.size() + osoblje.size() + sestre.size();
+		return lekari.size() + osoblje.size() + sestre.size();
 	}
 
 	public int brojSestara() {
@@ -90,7 +91,7 @@ public class Bolnica {
 	}
 
 	public int brojLekara() {
-			return lekari.size();
+		return lekari.size();
 	}
 
 	public int brojOsoblja() {
