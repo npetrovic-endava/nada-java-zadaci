@@ -23,7 +23,7 @@ public class NizBrojeva {
 	private static final String UNOS_BROJA_ZA_PROVERU = "\nUneti broj za koji zelite da vidite da li je u nizu:";
 	private static final String ISPIS_PRIPADA = "Broj pripada nizu.";
 	private static final String ISPIS_NE_PRIPADA = "Broj ne pripada nizu.";
-	private static final String ISPIS_POGRESNOG_PARAMETRA = "Pogresan parametar, unesite ceo broj veci od 5!";
+	private static final String ISPIS_POGRESNOG_PARAMETRA = "Pogresan parametar";
 	private static boolean uslov = true;
 
 	public static void main(String[] args) {
